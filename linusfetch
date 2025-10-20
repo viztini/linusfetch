@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Check if chafa is installed
+if ! command -v chafa &> /dev/null
+then
+    echo "chafa could not be found. Please install it to display images."
+    echo "For example, on Debian/Ubuntu: sudo apt install chafa"
+    echo "On Arch Linux: sudo pacman -S chafa"
+    exit 1
+fi
+
+IMAGE_PATH="/home/viztini/Downloads/Screenshot from 2025-10-20 21-28-30.jpg"
+
+# Calculate Linus Torvalds' age
+BIRTH_DATE="1969-12-28"
+CURRENT_DATE="$(date +%Y-%m-%d)"
+AGE=$(( ($(date -d "$CURRENT_DATE" +%s) - $(date -d "$BIRTH_DATE" +%s)) / (60*60*24*365) ))
+
+# Display image and information side-by-side
+# Adjust --size and --stretch to fit your terminal
+# Removed --fill as it was causing the error and is not strictly necessary for basic image display.
+chafa "$IMAGE_PATH" --size 40x20 --stretch | while IFS= read -r line; do
+    echo -n "$line"
+    # Add Linus Torvalds info here, line by line, aligned with the image
+    case $LINENO in
+        1) echo "    Linus Torvalds" ;;
+        2) echo "    --------------" ;;
+        3) echo "    OS: Human" ;;
+        4) echo "    Hostname: Linus Torvalds" ;;
+        5) echo "    Kernel: DNA (version ${AGE})" ;;
+        6) echo "    Uptime: ${AGE} years (still compiling)" ;;
+        7) echo "    Distro: Finnish-American" ;;
+        8) echo "    Packages: Common Sense, Sarcasm, Git, C-language" ;;
+        9) echo "    Shell: Skin (thick-skinned)" ;;
+        10) echo "   Resolution: 1.83m (6 ft)" ;;
+        11) echo "   CPU: Human Heart (pumping passion)" ;;
+        12) echo "   GPU: Human Brain (processing power)" ;;
+        13) echo "   Memory: Lots (especially for code)" ;;
+        14) echo "   " ;;
+        15) echo "   "Talk is cheap. Show me the code."" ;;
+        *) echo "" ;;
+    esac
+done
