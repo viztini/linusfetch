@@ -4,11 +4,20 @@ A `neofetch`-like command-line tool that displays information about Linus Torval
 
 ## Installation
 
-To install `linusfetch`, simply run the `install.sh` script:
+To install `linusfetch`:
 
-```bash
-./install.sh
-```
+1.  Clone the GitHub repository:
+    ```bash
+    git clone https://github.com/yourusername/linusfetch.git # Replace yourusername
+    ```
+2.  Change into the project directory:
+    ```bash
+    cd linusfetch
+    ```
+3.  Run the installation script:
+    ```bash
+    ./install.sh
+    ```
 
 This script will:
 
@@ -26,7 +35,7 @@ linusfetch
 
 ## Customization
 
-The image used in `linusfetch` is currently hardcoded to `~/Downloads/Screenshot from 2025-10-20 21-28-30.jpg`. You can modify the `IMAGE_PATH` variable in the `linusfetch` script to use a different image.
+The image used in `linusfetch` is located at `linus.jpg` within the project directory. You can replace this file with your own image, ensuring it is also named `linus.jpg`.
 
 ## Contributing
 
