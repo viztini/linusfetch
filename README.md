@@ -1,3 +1,4 @@
+<img width="1015" height="517" alt="Screenshot from 2025-10-20 21-59-44" src="https://github.com/user-attachments/assets/dd7db8fd-f5ab-4fff-8d2d-ac071d14f029" />
 # linusfetch
 
 A `neofetch`-like command-line tool that displays information about Linus Torvalds, alongside an image.
