@@ -10,7 +10,7 @@ To install `linusfetch`:
 
 1.  Clone the GitHub repository:
     ```bash
-    git clone https://github.com/yourusername/linusfetch.git # Replace yourusername
+    git clone https://github.com/viztini/linusfetch.git
     ```
 2.  Change into the project directory:
     ```bash
