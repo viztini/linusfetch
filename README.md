@@ -16,7 +16,11 @@ To install `linusfetch`:
     ```bash
     cd linusfetch
     ```
-3.  Run the installation script:
+3.  Make the installation script executable:
+    ```bash
+    chmod +x install.sh
+    ```
+4.  Run the installation script:
     ```bash
     ./install.sh
     ```
@@ -37,7 +41,7 @@ linusfetch
 
 ## Customization
 
-The image used in `linusfetch` is located at `linus.jpg` within the project directory. You can replace this file with your own image, ensuring it is also named `linus.jpg`.
+The image used in `linusfetch` is located at `linus.jpg` within the project directory. You can replace this file with your own image, ensuring it is also named `linus.jpg` or you can edit the code for your own filename!.
 
 ## Contributing
 
