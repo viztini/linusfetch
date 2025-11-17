@@ -9,7 +9,7 @@ then
     exit 1
 fi
 
-IMAGE_PATH="~/linusfetch/linus.jpg"
+IMAGE_PATH="$HOME/linusfetch/linus.jpg"
 
 # Calculate Linus Torvalds' age
 BIRTH_DATE="1969-12-28"
